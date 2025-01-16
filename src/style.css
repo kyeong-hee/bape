@@ -1,0 +1,168 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+.login{
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 16px;
+  gap: 0 8px;
+}
+.login div{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+
+.icon{
+  font-size: 1.3rem;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+.logo h1{
+  width: 120px;
+  height: fit-content;
+}
+
+.nav{
+  position: relative;
+  text-align: center;
+}
+.nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  gap: 0 24px;
+}
+
+.nav .search{
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+.contents{
+  max-width: 1600px;
+  padding: 0 16px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 24px;
+}
+.contents .box{
+  border: 1px solid #efefef;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.contetns ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 16px;
+}
+.contents .box img{
+  transition: .35s;
+}
+.contents .box:hover img{
+  scale: 1.05 1.05;
+}
+
+.loginform{
+  max-width: 800px;
+  height: 200px;
+  margin: 100px auto;
+  padding: 40px 0;
+  padding-left: 16px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.loginform label{
+  width: 50px;
+  height: 20px;
+}
+.loginform .id{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.loginform .pw{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.loginform input{
+  width: 60%;
+  height: 60%;
+  padding-left: 32px;
+  margin: auto;
+  margin-left: 24px;
+  text-align: center;
+}
+.loginform button{
+  width: 100px;
+  height: 25px;
+  margin-top: 32px;
+  border: none;
+  background-color: #000;
+  color: #efefef;
+ 
+}
+
+.proudctdetail{
+  width: 100%;
+}
+.productdetail .inner{
+  max-width: 1600px;
+  margin: 64px auto;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+
+
+@media screen and (max-width:1200px) {
+  .contents{
+    grid-template-columns: repeat(3,1fr);
+  }
+  .contents h3{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width:767px){
+.contents{
+  grid-template-columns: repeat(2,1fr);
+}
+}
